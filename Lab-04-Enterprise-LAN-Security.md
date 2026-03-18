@@ -8,19 +8,19 @@
 
 ### Step 1.1: Physical Layer (OSI Layer 1)
 
-![Network Topology](Network Topology.png)
+![Network Topology](topology.png)
 
 For this part of the lab, I created a network topology that includes three separate network segments: IT, OT (SCADA), and a remote network. Each network has its own router, switch, and devices connected to it. I connected everything using cables in Packet Tracer so that all the devices could communicate with each other. This step represents the Physical layer because it focuses on how devices are physically connected and how data moves through cables. It’s basically the starting point of the network before any configurations like IP addresses or routing are set up.
 
 ### Step 1.2: Data Link Layer (OSI Layer 2)
 
-![Switch MAC Table](Switch MAC Tables.png)
+![Switch MAC Table](mac-table.png)
 
 For this step, I looked at how the switch handles communication between devices on the same network. The switch learns the MAC addresses of connected devices and stores them in a MAC address table. This allows it to send data only to the correct device instead of sending it to all devices. The MAC address table updates automatically as devices communicate, which helps make the network more efficient. This step represents the Data Link layer because it uses MAC addresses to move data between devices within the same network. Instead of using IP addresses, the switch relies on hardware addresses to forward frames correctly.
 
 ### Step 1.3: Network Layer (OSI Layer 3)
 
-![Router Configuration and Routing](Router Configuration and Routing.png)
+![Router Configuration and Routing](router-routing.png)
 
 For this step, I configured the routers by assigning IP addresses to each interface and setting up routing between the networks. This made it possible for devices on different networks, like IT and OT, to communicate with each other. I also checked the routing table to make sure all the networks were reachable and connected correctly. This step represents the Network layer because it uses IP addresses and routing to send data between different networks.
 
@@ -28,7 +28,7 @@ For this step, I configured the routers by assigning IP addresses to each interf
 
 ![Successful Local Network Connectivity Test](Successful Local Network Connectivity Test (IT Network).png)
 
-![Successful Ping from IT-PC1 to 192.168.50.10](Successful Ping from IT-PC1 to 192.168.50.10.png)
+![Successful Ping from IT-PC1 to 192.168.50.10](ping-ot-server.png)
 
 For this step, I tested the network by using ping to check connectivity between devices. First, I pinged another device on the same network, and it worked with 0% packet loss. Then I tested a device on a different network, which was also successful. This showed that routing between the networks was working correctly. Overall, the successful ping results confirmed that all devices could communicate across the network.
 
@@ -52,7 +52,7 @@ For this step, I worked with the OT web server to simulate a vulnerable LAMP sta
 
 ### Step 3.2: Shellshock Exploit Simulation
 
-![Shellshock Simulation](Shellshock-Sim.png)
+![Shellshock Simulation](shellshock-sim.png)
 
 For this step, I simulated a Shellshock attack from the attacker node to the OT web server. The attack works by sending a specially crafted HTTP request that includes a malicious Bash command inside a user agent field. When the web server processes this request, it passes the input to a CGI script, which then interacts with the Bash shell. Because of the Shellshock vulnerability, the Bash shell would execute the malicious command instead of ignoring it. This shows how an attacker can run commands remotely on a vulnerable system without needing authentication.
 
