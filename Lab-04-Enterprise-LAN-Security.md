@@ -74,26 +74,9 @@ Other protections include using firewalls and intrusion detection systems (IDS) 
 
 ### Step 4.1: Attack Path Reconstruction
 
+#### Attack Path Diagram
 
-Attack Path Diagram
-
-Attacker (203.0.113.100)
-|
-| (1) Malicious HTTP Request - Shellshock Exploit
-↓
-OT Web Server (192.168.50.10)
-|
-| (2) Remote Code Execution via Bash / CGI
-↓
-Compromised OT Web Server
-|
-| (3) Unauthorized SSH Access (Lateral Movement)
-↓
-SCADA Devices (OT Network)
-|
-| (4) Data Exfiltration (2.3 GB)
-↓
-External Attacker (203.0.113.100)
+![Attack Path Diagram](attack-path.png)
 
 
 I analyzed how the attacker would move through the network based on the incident details and the Shellshock vulnerability. The initial access would likely occur when the attacker (203.0.113.100) sends a malicious HTTP request to the OT web server (192.168.50.10) targeting the CGI script. Because the server is vulnerable to Shellshock, the Bash shell would execute the attacker’s command, giving them remote access.
