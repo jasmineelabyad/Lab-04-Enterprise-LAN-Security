@@ -1,13 +1,20 @@
-![Network Topology](topology.png)
+# Lab 04: Enterprise LAN Security Assessment
 
-![Switch MAC Table](mac-table.png)
+This repository contains my Lab 04 submission for IT-335-B.
 
-![Router Configuration and Routing](router-routing.png)
+## Contents
 
-![Successful Local Network Connectivity Test](Successful Local Network Connectivity Test (IT Network).png)
+- `Lab-04-Enterprise-LAN-Security.md` — full lab writeup
+- Packet Tracer screenshots for topology, routing, MAC table, connectivity testing, server configuration, and Shellshock simulation
 
-![Successful Ping from IT-PC1 to 192.168.50.10](ping-ot-server.png)
+## Lab Summary
 
-![OT Web Server Configuration](server-config.png)
+In this lab, I designed a segmented enterprise LAN in Packet Tracer and mapped the work to the OSI model. I configured routing between network segments, verified connectivity, analyzed transport and application layer security, and documented a simulated Shellshock vulnerability scenario. I also completed an incident response analysis, root cause analysis, and mitigation strategy based on the network design.
 
-![Shellshock Simulation](shellshock-sim.png)
+## Course
+
+IT-335-B
+
+## Student
+
+Jasmine Elabyad
