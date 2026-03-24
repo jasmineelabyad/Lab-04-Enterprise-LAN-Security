@@ -4,6 +4,12 @@
 **Course:** IT-335-B  
 **Date:** March 17, 2026  
 
+## Introduction
+
+Winslow Bay Municipal Utility District (WBMUD) represents a critical infrastructure environment where secure network design is essential for protecting water and wastewater systems. In this lab, I designed a segmented enterprise LAN including IT, OT, and remote networks, and analyzed how different protocols and OSI layers contribute to both functionality and security.
+
+The goal of this lab was to apply OSI model concepts, evaluate protocol security, and understand how vulnerabilities like Shellshock can impact real-world systems. This project demonstrates how proper network segmentation and secure configurations help protect critical infrastructure from cyber threats.
+
 ## Part 1: Network Architecture & OSI Mapping
 
 ### Step 1.1: Physical Layer (OSI Layer 1)
