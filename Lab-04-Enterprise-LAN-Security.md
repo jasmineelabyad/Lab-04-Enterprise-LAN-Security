@@ -46,8 +46,19 @@ For this step, I looked at how TCP and UDP work at the Transport layer and how t
 
 ### Step 2.2: Application Layer Security (OSI Layer 7)
 
-For this step, I compared HTTP and HTTPS to understand how security works at the Application layer. HTTP does not encrypt data, which means information sent over the network can be intercepted and read by attackers. HTTPS, however, uses encryption (TLS/SSL) to protect data while it is being transmitted. This helps keep sensitive information, like login credentials, secure. Because of this, HTTPS is more secure than HTTP and helps protect against attacks such as man-in-the-middle attacks. For remote access, I compared SSH and Telnet. Telnet sends data, including usernames and passwords, in plain text, which makes it insecure. SSH encrypts all communication, which protects sensitive information from being intercepted. Because of this, SSH is used instead of Telnet in modern networks for secure remote access. This step represents the Application layer because it involves how users interact with services like web browsing and remote access, and how data is secured during communication.
+For this step, I compared HTTP and HTTPS to understand how security works at the Application layer. HTTP does not encrypt data, which means information sent over the network can be intercepted and read by attackers. HTTPS, however, uses encryption (TLS/SSL) to protect data while it is being transmitted. This helps keep sensitive information, like login credentials, secure. Because of this, HTTPS is more secure than HTTP and helps protect against attacks such as man-in-the-middle attacks.
+To demonstrate this, I tested both HTTP and HTTPS access to the OT web server in Packet Tracer. When accessing the server using HTTP, the webpage loaded successfully, but the communication was not encrypted. When I switched to HTTPS, the same webpage was accessible, but this time the communication was encrypted, providing better protection for sensitive data. This shows the importance of using HTTPS in real-world networks.
+For remote access, I compared SSH and Telnet. Telnet sends data, including usernames and passwords, in plain text, which makes it insecure. SSH encrypts all communication, which protects sensitive information from being intercepted. I tested SSH by remotely logging into the router from a PC, which demonstrated how secure remote access works in practice. Overall, these tests show how using secure protocols like HTTPS and SSH helps protect data and prevent unauthorized access.
+## HTTP and HTTPS Access
 
+### Screenshot 6a – HTTP Access to Web Server
+![Screenshot 6a – HTTP Access](screenshot-6a-http-access-to-web-server.png)
+
+### Screenshot 6b – HTTPS Access to Web Server
+![Screenshot 6b – HTTPS Access](screenshot-6b-https.png)
+
+### Screenshot 7 – SSH Remote Login
+![Screenshot 7 – SSH Remote Login](screenshot-7-ssh.png)
 ## Part 3: Shellshock Vulnerability Simulation
 
 ### Step 3.1: Configure Vulnerable LAMP Server
