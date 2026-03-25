@@ -52,8 +52,7 @@ For remote access, I compared SSH and Telnet. Telnet sends data, including usern
 ## HTTP and HTTPS Access
 
 ### Screenshot 6a – HTTP Access to Web Server
-![Screenshot 6a – HTTP Access](screenshot-6a-http-access-to-web-server.png)
-
+![Screenshot 6a – HTTP Access](screenshot-6a-http-access-ot-web-server.png)
 ### Screenshot 6b – HTTPS Access to Web Server
 ![Screenshot 6b – HTTPS Access](screenshot-6b-https.png)
 
